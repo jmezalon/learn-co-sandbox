@@ -17,3 +17,12 @@ drinking = (age > 21) ? "I'm drinking rum tonight because I'm #{age}." : "let me
 
 puts drinking
 
+<<<<<<< HEAD
+=======
+# the difference between puts, print and p
+
+# puts print stuff to the screen and goes to a new line while print stays in the same line
+
+# p in the other hand print raw to the screen and return a value
+
+>>>>>>> e6c55ca4e0aca4e6d3a5f3be85bc4b22edd7005b
