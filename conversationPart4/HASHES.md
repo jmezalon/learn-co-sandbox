@@ -59,3 +59,64 @@ we can test this with
 ```
 
 string in the other hand are different and the reason is because string are mutable in constrast to symbols
+
+## let's look at created and updating a Hash
+we use the bracket-equal notation to update a Hash
+
+```rb
+person = {
+  name: "Max",
+  age: 28
+}
+
+#if the year has change i could update my age like this
+person[:age] = 29
+```
+
+we can also add keys and values
+
+we the bracket-equal notation, if a key is not present ruby will created that key along with the value
+
+```rb
+person = {
+  name: "Max",
+  age: 28
+}
+
+#if the year has change i could update my age like this
+person[:age] = 29
+person[:birthplace] = "haiti"
+
+#=> {
+  :name => "Max",
+  :age => 29,
+  :birthplace => "haiti"
+}
+```
+
+we could use look up condition to find if a key exist before we assign anything to it like this,
+
+```rb
+if school_manifest["school exist"]
+  school_manifest["school exist"] += 1 
+else
+  puts "key not found"
+end
+```
+that will just put key not found in the terminal rather than just cause an error
+ or 
+instead of putting a message into the terminal we could just fix the problem by just creating that 
+key/value pair like this,
+
+```rb
+if school_manifest["school exist"]
+  school_manifest["school exist"] += 1 
+else
+  school_manifest["school exist"] = 1
+end
+```
+
+
+
+
+

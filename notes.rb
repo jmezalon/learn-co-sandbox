@@ -1,7 +1,13 @@
+# this is my local irb 
 
 
+spice_rack = [
+  ["Mace", "Ginger", "Marojam"],          
+  ["Paprika", "Fajita Mix", "Coriander"], 
+  ["Parsley", "Sage", "Rosemary"]         
+]
 
+spice_rack[1][1] = "extract of pizza"
+spice_rack[1][10] = "poodle dinner"
 
-
-# print prints stuff to the screen and stay on the same line
-# puts   print stuff and goes  to a new line
+p spice_rack
